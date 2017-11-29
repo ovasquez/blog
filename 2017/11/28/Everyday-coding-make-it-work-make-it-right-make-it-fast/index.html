@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="I have heard this phrase in several occasions, but always thought it was just a catch phrase to motivate people to code more and stay working late. With all the">
+<meta name="keywords" content="coding">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Everyday coding: make it work, make it right, make it fast!">
+<meta property="og:url" content="https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/index.html">
+<meta property="og:site_name" content="ovasquez.github.io">
+<meta property="og:description" content="I have heard this phrase in several occasions, but always thought it was just a catch phrase to motivate people to code more and stay working late. With all the buzz words you hear at work, why would">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-11-29T00:07:05.602Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Everyday coding: make it work, make it right, make it fast!">
+<meta name="twitter:description" content="I have heard this phrase in several occasions, but always thought it was just a catch phrase to motivate people to code more and stay working late. With all the buzz words you hear at work, why would">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/blog/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/blog/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Everyday coding: make it work, make it right, make it fast!</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/blog/css/style.css">
+    <!-- rss -->
+    
+    
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/blog/">Home</a></li>
+         
+          <li><a href="/blog/about/">About</a></li>
+         
+          <li><a href="/blog/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/ovasquez">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/blog/2017/06/09/Publishing-a-PyPi-package-on-Windows/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&text=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&is_video=false&description=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Everyday coding: make it work, make it right, make it fast!&body=Check out this article: https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&name=Everyday coding: make it work, make it right, make it fast!&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#A-bit-of-context"><span class="toc-number">1.</span> <span class="toc-text">A bit of context</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-it-work"><span class="toc-number">2.</span> <span class="toc-text">Make it work</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLDR"><span class="toc-number">2.1.</span> <span class="toc-text">TLDR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-it-right"><span class="toc-number">3.</span> <span class="toc-text">Make it right</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLDR-1"><span class="toc-number">3.1.</span> <span class="toc-text">TLDR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-it-fast"><span class="toc-number">4.</span> <span class="toc-text">Make it fast</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLDR-2"><span class="toc-number">4.1.</span> <span class="toc-text">TLDR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-words"><span class="toc-number">5.</span> <span class="toc-text">Final words</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Everyday coding: make it work, make it right, make it fast!
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">ovasquez.github.io</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-11-28T23:19:41.000Z" itemprop="datePublished">2017-11-28</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/blog/tags/coding/">coding</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>I have heard this phrase in several occasions, but always thought it was just a catch phrase to motivate people to code more and stay working late. With all the buzz words you hear at work, why would this one be any different?</p>
+<p>I decided to explain it to my ten-years-ago self that didn’t take the time to read between the lines.</p>
+<h2 id="A-bit-of-context"><a href="#A-bit-of-context" class="headerlink" title="A bit of context"></a>A bit of context</h2><p>As a software developer who has worked in different companies (small, medium and large sized), I’ve been exposed to quite a few development methodologies, each one of them clamming to be the holy grail of software development. This has given me a good perspective on the pros and cons, and allowed me to understand some of the core skills and values that are common among them.</p>
+<p>You might be thinking, what does the catch phrase have to do with the development methodologies? These are simple cues for successful code writing, which is vital in any methodology you choose.</p>
+<p>Let’s take a look at the phrase again, but this time in more detail:</p>
+<h2 id="Make-it-work"><a href="#Make-it-work" class="headerlink" title="Make it work"></a>Make it work</h2><p>You have an idea of what’s the goal but you still haven’t connected all the dots, so, how do you begin?</p>
+<p>I’ve tried TDD before, but this never worked well for me when dealing with a high level of uncertainty, so I rather take some time to explore options, understand inputs and outputs, while at the same time trying to find a way to make it by growing the codebase.</p>
+<h3 id="TLDR"><a href="#TLDR" class="headerlink" title="TLDR"></a>TLDR</h3><p>Start exploring the solution without expecting to solve all problems in the beginning.</p>
+<h2 id="Make-it-right"><a href="#Make-it-right" class="headerlink" title="Make it right"></a>Make it right</h2><p>Your code works. Now it’s time to make it look good.</p>
+<p>Think about clean code principles and look for parts of the code that are due for a refactoring.</p>
+<ul>
+<li>Did a file or a function get too big?</li>
+<li>What about some common functionality that could be unified?</li>
+<li>Any patterns you might have missed, or anti-patterns that made their way through during a long night of coding?</li>
+<li>Do you have repeatable tests to make sure your code keeps working after some tweaks?</li>
+</ul>
+<p>This is the time to make it right.</p>
+<h3 id="TLDR-1"><a href="#TLDR-1" class="headerlink" title="TLDR"></a>TLDR</h3><p>Your code is working, clean it up, refactor it if necessary (patterns, low coupling), and write tests for the core functionality.</p>
+<h2 id="Make-it-fast"><a href="#Make-it-fast" class="headerlink" title="Make it fast"></a>Make it fast</h2><p>The show is ready to start and you’re about to publish your code, but performance could be a showstopper.</p>
+<p>The code might not be in a critical section, but it’s always important to keep in mind how it’s going to be executed.</p>
+<ul>
+<li>Is this a simple UI tweak or do we have to execute thousands of requests per second?</li>
+<li>How about the memory consumption? Could we make it more efficient?</li>
+<li>Are we using the least amount of necessary CPU cycles?</li>
+</ul>
+<p>This is usually best answered with performance testing, but even without it (or just with some simple tests), thinking about the performance when you have the complete picture of the code allows you to identify issues that could have been missed when delving deep into writing each line, look at this as is the <em>icing on the cake</em> before publishing.</p>
+<h3 id="TLDR-2"><a href="#TLDR-2" class="headerlink" title="TLDR"></a>TLDR</h3><p>Review the code for performance improvements (CPU, Memory, etc.) that you might have missed during the process.</p>
+<h2 id="Final-words"><a href="#Final-words" class="headerlink" title="Final words"></a>Final words</h2><p>Regardless of the process, requirements, or level of abstraction that I have to work with, these steps allow me to have a common way to tackle most of the <em>everyday coding</em> tasks. I hope this was enough for my 10-years-ago self to get started in the good coding life 😎.</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/blog/">Home</a></li>
+         
+          <li><a href="/blog/about/">About</a></li>
+         
+          <li><a href="/blog/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/ovasquez">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#A-bit-of-context"><span class="toc-number">1.</span> <span class="toc-text">A bit of context</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-it-work"><span class="toc-number">2.</span> <span class="toc-text">Make it work</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLDR"><span class="toc-number">2.1.</span> <span class="toc-text">TLDR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-it-right"><span class="toc-number">3.</span> <span class="toc-text">Make it right</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLDR-1"><span class="toc-number">3.1.</span> <span class="toc-text">TLDR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Make-it-fast"><span class="toc-number">4.</span> <span class="toc-text">Make it fast</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TLDR-2"><span class="toc-number">4.1.</span> <span class="toc-text">TLDR</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-words"><span class="toc-number">5.</span> <span class="toc-text">Final words</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&text=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&is_video=false&description=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Everyday coding: make it work, make it right, make it fast!&body=Check out this article: https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&title=Everyday coding: make it work, make it right, make it fast!"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://ovasquez.github.io/blog/2017/11/28/Everyday-coding-make-it-work-make-it-right-make-it-fast/&name=Everyday coding: make it work, make it right, make it fast!&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 Oscar Vasquez
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/blog/">Home</a></li>
+         
+          <li><a href="/blog/about/">About</a></li>
+         
+          <li><a href="/blog/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/ovasquez">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/blog/lib/meslo-LG/styles.css">
+<link rel="stylesheet" href="/blog/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+<script src="/blog/lib/jquery/jquery.min.js"></script>
+<script src="/blog/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/blog/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-100141509-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
